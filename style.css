@@ -1,16 +1,17 @@
-* {
-    margin-top: 0;
-    margin-left: 0;
-}
 
 .container {
     background-color: #edf2f4;
     padding: 20px;
 }
 
-.portfolio-links {
-    margin: 10px;
-    padding: 5px;
+/* .portfolioImages {
+    height: 50%;
+    
+} */
+
+.portfolioLinks {
+    font-size: 50px;
+    margin: 0;
 }
 
 .footer {
