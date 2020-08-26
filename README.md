@@ -1,4 +1,4 @@
-# Homework2-ResponsivePortfolio
+# Brian Praseuth - Portfolio
 
 Created a mobile responsive website consisting of three linked html files. An about me page, a portfolio with filler information, and a basic contact page. 
 
