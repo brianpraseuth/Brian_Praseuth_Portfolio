@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="main.html">Brian Praseuth</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="main.html"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -52,15 +52,18 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <h1 class="col-12 text-center">Brian Praseuth</h1>
-      <h2 class="col-12 text-center">Full-Stack Web Development</h2>
+  <div class="jumbotron jumbotron-fluid">
+    <div>
+      <h1 class="display-4 name-hero text-center">BRIAN PRASEUTH</h1>
+      <p class="lead text-center">Full Stack | Web Design | UX&UI</p>
     </div>
+  </div>
+
+  <div class="container transparent bio col-12">
     <br>
     <div class="row">
-      <img src="imgs/profilepicture.jpg" class="col-6">
-      <p class="col-6">
+      <img src="imgs/profilepicture.jpg" class="col-4 profile-image">
+      <p class="col-8 text-center">
         Full-Stack Web Developer with a background of over ten years in the customer service industry ready to build
         fully functional websites and applications for potential clients.Earned a certificate of completion from the UC
         Davis Coding Bootcamp program as a Full-Stack Web Developer with skills in HTML, CSS, JavaScript, Node.js, and
@@ -70,14 +73,111 @@
         client’s and their vision. My aim is to work on any project that will not only let me display my skill set, but
         also challenge me to learn completely new ways to innovate in the future. Equipped with working collaboratively
         with a like-minded team to ensure optimal results for user-centered and technology-centered designs.</p>
-        
-      <div class="container">
-        <h2 class="text-center">Contact:</h2>
-        <h3 class="text-center">brianpraseuth@gmail.com | 916-869-7050</h3>
-        <h2><a target="_blank" class="nav-link text-center" href="https://docs.google.com/document/d/1lRFku4G2wlSTUJ4apBLLPPBOdVW0ep4U-_0gAN6XiL0/edit?usp=export?format=pdf">Resume</a></h2>
-      </div>  
     </div>
 
+
+    <br>
+    <div class="container text-center my-3">
+      <h1 class="display-4 name-hero text-center">PROJECTS</h1>
+      <br>
+      <div class="row mx-auto my-auto">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                  <div class="carousel-item active">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                            <a href="https://brianpraseuth.github.io/Group-Project-1-Insta-Date/" target="_blank">
+                              <img class="img-fluid" src="./imgs/instadate.png">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                            <a href="https://brianpraseuth.github.io/Work-Day-Scheduler-APIs/" target="_blank">
+                              <img class="img-fluid" src="./imgs/workscheduler.png">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                            <a href="https://brianpraseuth.github.io/Password-Generator/" target="_blank">
+                              <img class="img-fluid" src="./imgs/passwordGenerator.png">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                            <a href="https://github.com/brianpraseuth/Employee_Tracker_MySQL" target="_blank">
+                              <img class="img-fluid" src="./imgs/employee_tracker.png">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                              <img class="img-fluid" src="http://placehold.it/380?text=5">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                              <img class="img-fluid" src="http://placehold.it/380?text=6">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+      <h5 class="mt-2">Advances one slide at a time</h5>
+  </div>
+</div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+<script>
+  $( document ).ready(function() {
+    console.log( "ready!" );
+});
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+</script>
 </body>
 
 </html>

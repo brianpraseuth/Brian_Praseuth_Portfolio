@@ -7,11 +7,17 @@ body {
     background-color: white;
   }
 
-.container {
-    background-color: #edf2f4;
-    opacity: 90%;
-    padding: 30px;
+.bio {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
+
+.transparent {
+    background:#7f7f7f;
+    background:rgba(255,255,255,0.5);
+  }
 
 h1 {
     color: #364958;
@@ -41,4 +47,50 @@ h1 {
 
 a {
     color: #364958;
+}
+
+.jumbotron {
+    color: black;
+    background: none;
+    letter-spacing: 1px;
+    height: 300px;
+}
+
+.name-hero {
+    letter-spacing: 10px;
+}
+
+/* Carousel Code */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
 }
