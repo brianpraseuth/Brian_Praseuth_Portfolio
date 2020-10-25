@@ -32,6 +32,9 @@ h1 {
 
 .portfolioImages {
     border: solid #364958 1px;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
 }
 
 
@@ -96,7 +99,7 @@ a {
 }
 
 .footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
