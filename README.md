@@ -1,5 +1,7 @@
 # Brian Praseuth - Portfolio
 
+Link: https://brianpraseuth.github.io/Brian_Praseuth_Portfolio/
+
 Created a mobile responsive website consisting of three linked html files. An about me page, a portfolio with filler information, and a basic contact page. 
 
 All of the pages have a working navbar with working links to each page.
