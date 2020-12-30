@@ -8,6 +8,7 @@ import {
 //   Button,
 } from "@material-ui/core";
 import Projects from './Projects';
+import projects from '../projects.json';
 
 const useStyles = makeStyles((theme) => ({
   projectContainer: {
@@ -16,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
   projectsTitle: {
     fontWeight: 800,
     paddingBottom: theme.spacing(3),
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }));
 
@@ -29,8 +34,17 @@ export default function ProjectContainer() {
           Projects
         </Typography>
         <Grid Container spacing={3}>
-          {/* Map through projects here using */}
-          <Projects />
+          Map through projects here using
+        {projects.map(project => (
+          <Projects 
+            id={project.id}
+            image={project.image}
+            title={project.title}
+            summary={project.summary}
+            github={project.github}
+            link={project.link}
+          />
+        ))}
         </Grid>
       </Container>
     </div>
