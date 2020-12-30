@@ -4,6 +4,7 @@ import Hero from '../Hero';
 import ProjectContainer from '../ProjectContainer';
 import Infobar from '../Infobar';
 import Bio from '../Bio';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Infobar />
       <Bio />
       <ProjectContainer />
+      <Footer />
     </div>
   );
 }

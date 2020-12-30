@@ -4,7 +4,7 @@ import {
   Typography,
   Toolbar,
   AppBar,
-  Link,
+  // Link,
   // Button,
 } from "@material-ui/core";
 
@@ -22,7 +22,7 @@ export default function Navbar() {
     <div>
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h5" color="primary">
+          <Typography variant="h5">
             Brian Praseuth
           </Typography>
         </Toolbar>

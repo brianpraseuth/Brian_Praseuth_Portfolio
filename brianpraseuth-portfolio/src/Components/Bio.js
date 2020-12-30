@@ -3,13 +3,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import {
   Box, 
   Typography, 
-  Link,
+//   Link,
 } from "@material-ui/core";
+import profilePicture from "../Components/images/profile-picture.jpg";
+
 
 const useStyles = makeStyles((theme) => ({
   bioDiv: {
-    backgroundColor: "#eddcd2",
-    height: "auto",
+    backgroundColor: "#d9d9d9",
+    height: "300px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -17,6 +19,14 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "10px",
     paddingBottom: "10px",
   },
+  profilePicture: {
+      height: "80%",
+      borderRadius: "50%",
+  },
+  liItems: {
+      listStyleType: "none",
+      lineHeight: "250%",
+  }
 }));
 
 export default function Bio() {
@@ -25,9 +35,15 @@ export default function Bio() {
   return (
     <div>
       <Box className={classes.bioDiv}>
-            <img src="images/profile-picture.jpg"></img>
+            <img className={classes.profilePicture} src={profilePicture} alt=""></img>
             <Typography>
-                This is where my bio is going
+                <ul className={classes.liItems}>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>UXUI</li>
+                    <li>SQL | NoSQL</li>
+                </ul>
             </Typography>
       </Box>
     </div>
