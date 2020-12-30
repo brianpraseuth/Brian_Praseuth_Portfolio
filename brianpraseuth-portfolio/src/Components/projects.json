@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "culinate.png",
+      "image": "/images/profile-picture.jpg",
       "title": "Culinate",
       "summary": "An Application Where a user can search for recipes and save their favorites.",
       "github": "https://github.com/brianpraseuth/Culinate_Group_Project_2",
