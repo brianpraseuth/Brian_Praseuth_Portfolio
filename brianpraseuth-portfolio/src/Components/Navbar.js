@@ -4,12 +4,14 @@ import {
   Typography,
   Toolbar,
   AppBar,
+  Link,
   // Button,
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#fff",
+    backgroundColor: "#18435a",
+    
   }
 }));
 
@@ -20,7 +22,7 @@ export default function Navbar() {
     <div>
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h6" color="primary">
+          <Typography variant="h5" color="primary">
             Brian Praseuth
           </Typography>
         </Toolbar>

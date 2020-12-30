@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTypingEffect from 'react-typing-effect';
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Box,
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     color: "#fff",
-    fontSize: "4rem",
+    fontSize: "5rem",
     [theme.breakpoints.down("sm")]: {
       height: 300,
       fontSize: "3em",
@@ -31,7 +32,29 @@ export default function Hero() {
   return (
     <div>
       <Box className={classes.hero}>
-        <Box>Brian Praseuth</Box>
+        <Box>Brian Praseuth
+        <br></br>
+      <ReactTypingEffect
+        text={["Full Stack Web Development"]}
+        cursorRenderer={cursor => <p>{cursor}</p>}
+        style={{fontSize: "1rem", display: "flex", justifyContent: "center"}}
+        displayTextRenderer={(text, i) => {
+          return (
+            <p>
+              {text.split('').map((char, i) => {
+                const key = `${i}`;
+                return (
+                  <span
+                    key={key}
+                    style={i%2 === 0 ? { color: 'white'} : {}}
+                  >{char}</span>
+                );
+              })}
+            </p>
+          );
+        }}        
+      />
+      </Box>
       </Box>
     </div>
   );

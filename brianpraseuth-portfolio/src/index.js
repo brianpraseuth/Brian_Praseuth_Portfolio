@@ -4,13 +4,16 @@ import './index.css';
 import { ThemeProvider } from '@material-ui/core/styles';
 import App from './Components/App/App';
 import theme from './theme';
+import { BrowserRouter as Router} from 'react-router-dom';
 // import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
+  <Router>
   <ThemeProvider theme={theme}>
     <App />
-  </ThemeProvider>,
+  </ThemeProvider>
+  </Router>,
   document.getElementById('root'),
 );
 // If you want your app to work offline and load faster, you can change
