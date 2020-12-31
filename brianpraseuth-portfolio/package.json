@@ -1,5 +1,6 @@
 {
   "name": "brianpraseuth-portfolio",
+  "homepage": "https://github.com/brianpraseuth/Brian_Praseuth_Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

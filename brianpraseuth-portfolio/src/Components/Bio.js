@@ -6,11 +6,10 @@ import {
 //   Link,
 } from "@material-ui/core";
 import profilePicture from "../Components/images/profile-picture.jpg";
-
+import vectorBackground from "../Components/images/vectorBackground.jpg";
 
 const useStyles = makeStyles((theme) => ({
   bioDiv: {
-    backgroundColor: "#d9d9d9",
     height: "300px",
     display: "flex",
     justifyContent: "center",
@@ -26,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
   liItems: {
       listStyleType: "none",
       lineHeight: "250%",
+  },
+  background: {
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('+ vectorBackground +')',
+      backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    position: "relative",
   }
 }));
 
@@ -33,7 +39,7 @@ export default function Bio() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.background}>
       <Box className={classes.bioDiv}>
             <img className={classes.profilePicture} src={profilePicture} alt=""></img>
             <Typography>

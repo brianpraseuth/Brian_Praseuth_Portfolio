@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   projectContainer: {
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
-    backgroundColor: "#284b63",
+    backgroundColor: "#093954",
   },
   projectsTitle: {
     fontWeight: 800,
@@ -82,10 +82,10 @@ export default function ProjectContainer(props) {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary">
-                <Link to={project.github}>Github</Link>
+                <Link href={project.github} to={project.github}>Github</Link>
               </Button>
               <Button size="small" color="primary">
-                <Link to={project.link}>Link</Link>
+                <Link href={project.link} to={project.link}>Link</Link>
               </Button>
             </CardActions>
           </Card>

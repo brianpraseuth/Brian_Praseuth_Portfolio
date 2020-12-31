@@ -10,7 +10,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#18435a",
+    backgroundColor: "#093954",
     
   }
 }));
@@ -22,8 +22,8 @@ export default function Navbar() {
     <div>
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="h5">
-            Brian Praseuth
+          <Typography variant="h6">
+            B | Praseuth
           </Typography>
         </Toolbar>
       </AppBar>
