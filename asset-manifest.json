@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/brianpraseuth/Brian_Praseuth_Portfolio/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/main.167d87b4.chunk.js",
+    "main.js.map": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/main.167d87b4.chunk.js.map",
+    "runtime-main.js": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/runtime-main.30bb2747.js",
+    "runtime-main.js.map": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/runtime-main.30bb2747.js.map",
+    "static/js/2.77984bf2.chunk.js": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/2.77984bf2.chunk.js",
+    "static/js/2.77984bf2.chunk.js.map": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/2.77984bf2.chunk.js.map",
+    "index.html": "/brianpraseuth/Brian_Praseuth_Portfolio/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/brianpraseuth/Brian_Praseuth_Portfolio/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.77984bf2.chunk.js.LICENSE.txt": "/brianpraseuth/Brian_Praseuth_Portfolio/static/js/2.77984bf2.chunk.js.LICENSE.txt",
+    "static/media/profile-picture.3ca97399.jpg": "/brianpraseuth/Brian_Praseuth_Portfolio/static/media/profile-picture.3ca97399.jpg",
+    "static/media/vectorBackground.0756fa46.jpg": "/brianpraseuth/Brian_Praseuth_Portfolio/static/media/vectorBackground.0756fa46.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30bb2747.js",
+    "static/js/2.77984bf2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.167d87b4.chunk.js"
+  ]
+}
