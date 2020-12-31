@@ -8,7 +8,7 @@ import {
   Card,
   CardActionArea,
   CardContent,
-  CardMedia,
+  // CardMedia,
   CardActions,
   Link,
   Button,
@@ -19,6 +19,8 @@ import projects from './projects.json';
 const useStyles = makeStyles((theme) => ({
   projectContainer: {
     paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(3),
+    backgroundColor: "#093954",
   },
   projectsTitle: {
     fontWeight: 800,
@@ -27,9 +29,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    color: "white"
   },
   card: {
-    maxWidth: "100%",
+    height: "100%",
   },
   media: {
     height: 240
@@ -50,10 +53,10 @@ export default function ProjectContainer(props) {
         <Typography variant="h4" className={classes.projectsTitle}>
           Projects
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
         {projects.map(project => (
         <Grid item xs={12} sm={6} md={4}
-            id={project.id}
+            key={project.id}
             image={project.image}
             title={project.title}
             summary={project.summary}
@@ -79,10 +82,10 @@ export default function ProjectContainer(props) {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary">
-                <Link to={project.github}>Github</Link>
+                <Link href={project.github} to={project.github}>Github</Link>
               </Button>
               <Button size="small" color="primary">
-                <Link to={project.link}>Link</Link>
+                <Link href={project.link} to={project.link}>Link</Link>
               </Button>
             </CardActions>
           </Card>

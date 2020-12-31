@@ -8,12 +8,11 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   contactDiv: {
-    backgroundColor: "#18435a",
+    backgroundColor: "#fff",
     height: "auto",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    color: "#fff",
     paddingTop: "10px",
     paddingBottom: "10px",
   },

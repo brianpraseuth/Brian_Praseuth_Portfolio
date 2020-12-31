@@ -1,19 +1,19 @@
 [
+  {
+    "id": 1,
+    "image": "https://pbs.twimg.com/profile_images/578900195812900864/r1t12Hyb.jpeg",
+    "title": "Coder's Corner",
+    "summary": "A social network for coding enthusiasts. Coder's Corner is a platform for developers and programmers to share resources, communicate with one another, network, post their thoughts on certain topics and issues in programming, and to practice and write their own code.",
+    "github": "https://github.com/brianpraseuth/the-coders-corner",
+    "link": "https://the-coders-corner.herokuapp.com/"
+  },
     {
-      "id": 1,
+      "id": 2,
       "image": "/images/profile-picture.jpg",
       "title": "Culinate",
       "summary": "An Application Where a user can search for recipes and save their favorites.",
       "github": "https://github.com/brianpraseuth/Culinate_Group_Project_2",
       "link": "https://culinate.herokuapp.com/"
-    },
-    {
-      "id": 2,
-      "image": "https://pbs.twimg.com/profile_images/578900195812900864/r1t12Hyb.jpeg",
-      "title": "Coder's Corner",
-      "summary": "A social network for coding enthusiasts. Coder's Corner is a platform for developers and programmers to share resources, communicate with one another, network, post their thoughts on certain topics and issues in programming, and to practice and write their own code.",
-      "github": "https://github.com/brianpraseuth/the-coders-corner",
-      "link": "https://the-coders-corner.herokuapp.com/"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
       "link": "https://floating-temple-44539.herokuapp.com/?id=5fa486435479a70017fe6a50"
     },
     {
-      "id": 1,
+      "id": 6,
       "image": "https://pbs.twimg.com/profile_images/578900195812900864/r1t12Hyb.jpeg",
       "title": "Note Taker",
       "summary": "This application is a simple note taker in which a user can create and save notes. Notes can be created, saved and deleted within the application. Users can refresh the page and notes will be saved.",
